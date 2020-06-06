@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker { image 'node:7-alpine' }
+        docker-slave { image 'node:7-alpine' }
     }
     stages {
         stage('build') {
